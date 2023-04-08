@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name=”robots” content=”noindex,nofollow”>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetKix &#8211; World Best Interactive Dog Camera</title>
+	<link rel="stylesheet" href="../clock/compiled/flipclock.css">
+
+	<!-- Theme color css -->
+	<link href="/home/ckav_min.css" rel="stylesheet">
+	<link href="/home/theme-02.css" rel="stylesheet">
+	<link href="/home/template-custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="/home/css" media="all">
+
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 1393178, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+	</script>
+
+	<style>
+		.flip-clock-label {
+			color: white !important;
+			font-size: medium !important;
+		}
+
+		.flip-clock-wrapper ul {
+			height: 80px;
+		}
+
+		@media (max-width: 500px) {
+			.flip-clock-wrapper {
+				bottom: -15px;
+			}
+
+			.flip-clock-wrapper ul li {
+				line-height: 40px;
+			}
+
+			.flip-clock-wrapper ul {
+				height: 35px;
+				width: 20px;
+			}
+
+			.flip-clock-wrapper ul li a div div.inn {
+				font-size: 35px;
+			}
+
+			.flip-clock-dot.top {
+				top: 10px;
+			}
+
+			.flip-clock-dot.bottom {
+				top: 35px;
+			}
+
+			.flip-clock-divider .flip-clock-label {
+				right: -50px;
+			}
+
+			.flip-clock-divider.minutes .flip-clock-label {
+				right: -70px;
+			}
+
+			.flip-clock-divider.seconds .flip-clock-label {
+				right: -70px;
+			}
+		}
+
+		.pulse {
+			-webkit-animation: pulse 1.2s infinite;
+			-moz-animation: pulse 1.2s infinite;
+			-ms-animation: pulse 1.2s infinite;
+			animation: pulse 1.2s infinite;
+			animation-duration: 1.2s;
+			animation-timing-function: ease;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			animation-fill-mode: none;
+			animation-play-state: running;
+			animation-name: pulse;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="page" data-linkscroll="y">
+		<section id="home" class="pos-rel pd-tb-medium pd-b-0 typo-light bg-dark min-vh-h100 flex-cc"
+			data-ckav-sm="pd-tb-small align-c" style="padding-top: 0px">
+			<div class="container align-c">
+				<div class="row align-items-center">
+
+					<div class="col-lg-8 col-md-6 align-l" data-ckav-sm="align-c">
+						<p class="title-sub italic animated fadeInUp full-visible" data-ckav-sm="small"
+							data-ckav-md="small" style="font-style: normal; font-size: 1.5em; font-weight: bold"
+							data-animate-in="fadeInUp|0.1" style="animation-delay: 0.1s; ">Petkix! World Best Dog Camera</p>
+
+						<div class="your-clock"></div>
+						<div class="form-block" data-ckav-sm="mr-b-30" data-animate-in="fadeIn|0.4"
+							style="animation-delay: 0.4s; margin-bottom: 10px">
+							<h3 class="mr-auto bold-1 f-1" style="font-size: 1.255em;"><strike>$249</strike> <strong
+									style="font-weight: bold; color: #fa5a00">$49</strong> on Indiegogo, opt-in to be updated. Coming 8/2019.</h3>
+							<form action="/php/subscribe.php" id="subscribeform" class="form-widget"
+								data-formtype="newsletter" novalidate="novalidate" style="margin-bottom: 10px">
+								<div class="field-wrp">
+									<div class="form-group">
+										<input id="email" class="form-control form-control-light bdr-op-light-2"
+											data-label="Email" required="" data-msg="Please enter email." type="email"
+											name="email" placeholder="Enter your email" style="background-color: white">
+									</div>
+								</div>
+							</form>
+							<div style="margin-bottom: 10px">
+								<button id="register"
+									class="btn solid btn-default txt-upper bold-n pulse">Subscribe</button>
+
+							</div>
+
+							<span style="padding-top: 10px; color: #ffffff">
+								<span id="count-off" class="highlight-petkix">8379</span> <span>opt in</span>
+							</span>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-3 offset-lg-1 col-md-6">
+						<img src="/images/product_2.png" class="mr-auto jarallax-img" alt="petkix image">
+						<div style="height: 20px"></div>
+						<a href="https://petkix.com" style="color: white;">Learn More</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<script src="/home/ckav_min.js"></script>
+		<!-- <script src="/clock/compliled/libs/jquery.js"></script> -->
+		<script src="../clock/compiled/flipclock.min.js"></script>
+		<script>
+			var clock = $('.your-clock').FlipClock((new Date("Thu Aug 06 2019 00:00:00").getTime() - new Date().getTime()) / 1000, {
+				clockFace: 'DailyCounter',
+				countdown: true
+			});
+			$.get('/counter', data =>{
+				document.getElementById('count-off').innerHTML = data;
+				countOff();
+			})
+
+			function getRandomArbitrary(min, max) {
+				return Math.random() * (max - min) + min;
+			}
+
+			function countOff() {
+				var current = document.getElementById('count-off').innerHTML;
+				document.getElementById('count-off').innerHTML = Number(current) + 1;
+				setTimeout(countOff, 1000 * getRandomArbitrary(3, 5));
+			}
+			$(document).ready(function () {
+				$("#register").off()
+
+				$("#register").on("click", function (e) {
+					if ($('#subscribeform').valid()) {
+						$.post({
+							url: '/php/subscribe1.php',
+							data: { email: $("#email").val() },
+							success: function () {
+								window.location.href = '/success'
+							},
+						})
+					}
+
+				});
+			});
+		</script>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/5d248d5c22d70e36c2a4e201/1dfgeeb25';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin', '*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143585090-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-143585090-1');
+		</script>
+
+	</div>
+</body>
+
+</html>

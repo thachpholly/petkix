@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+Page    : Success
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-->
+
+<head>
+    <meta name=”robots” content=”noindex,nofollow”>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--========== Page Ttile ==========-->
+    <title>PetKix &#8211; World Best Interactive Dog Camera
+    </title>
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Plugin Files -->
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/plugins/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/plugins/lineicons.css" rel="stylesheet">
+    <link href="../vendors/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../vendors/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="../css/plugins/animate.css" rel="stylesheet">
+
+    <!-- Preloader -->
+    <link href="../css/plugins/preloader.css" rel="stylesheet">
+
+    <!--========== Main Styles==========-->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Theme CSS (For Available Color Options, See Documentation ) -->
+    <link href="../css/themes/blue-orange.css" rel="stylesheet">
+
+    <!--========== HTML5 shim and Respond.js (Required) ==========-->
+    <!--[if lt IE 9]>
+    <script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1393178, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+</head>
+
+<body data-scroll-animation="false">
+
+    <!--========== Success Content ==========-->
+    <section class="row">
+        <div class="container">
+
+            <!-- Header Starts -->
+            <main id="top" class="text-center m-t-100">
+                <div class="container">
+                    <!-- Startup Logo -->
+                    <div class="logo">
+                        <a href="#"><img src="../images/product_2.png" height="64px" height="64px"
+                                alt="Success Icon"></a>
+                    </div>
+                    <!-- Hero Title -->
+                    <h4 class="h2">Save 45% when you reserve your Petkix 2 today! </h4>
+                    <!-- Sub Title -->
+                    <p class="lead">To receive this offer, simply place a $1 USD deposit and you will be locked in for
+                        our exclusive discount.
+                    </p>
+                    <ul>
+                        <li>
+                            Be the FIRST to know when we launch on indiegogo in November.
+                        </li>
+
+                        <li>
+                            You only pay $139 instead of MSRP $249.
+                        </li>
+
+                        <li>
+                            Added to VIP email list and Facebook VIP Group so you can chat with us directly.
+                        </li>
+                    </ul>
+                    <div id="paypal-button-container"></div>
+                    <script
+                        src="https://www.paypal.com/sdk/js?client-id=Ad72hCz0lxuk9GbkOTo5_T4kHUVAgvxiNu9tF5_RoDVzmo4n6KN1MYZv-JiSk-Q0eWkHCw8byrFAfP6L&currency=USD"></script>
+                    <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'rect',
+                                color: 'gold',
+                                layout: 'vertical',
+                                label: 'paypal',
+
+                            },
+                            createOrder: function (data, actions) {
+                                return actions.order.create({
+                                    purchase_units: [{
+                                        amount: {
+                                            value: '1',
+                                        }
+                                    }]
+                                });
+                            },
+                            onApprove: function (data, actions) {
+                                return actions.order.capture().then(function (details) {
+                                    alert('Transaction completed by ' + details.payer.name.given_name + 'your email address: ' + details.payer.email_address);
+                                    $.ajax({
+                                        url: '/success',
+                                        type: 'post',
+                                        dataType: 'json',
+                                        contentType: 'application/json',
+                                        success: function (data) {
+                                            window.location = '/success';
+                                        },
+                                        data: JSON.stringify({
+                                            email: details.payer.email_address
+                                        })
+                                    });
+                                });
+                            }
+                        }).render('#paypal-button-container');
+                    </script>
+                    Contact: hello@petkix.com
+                </div>
+            </main>
+            <!-- //   Header Ends -->
+
+            <p class="text-center" style="padding-top: 20px"> <a href="https://petkix.com" class="btn btn-outline"> ←
+                    Back to Home</a> </p>
+
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center m-t-20">Petkix &copy; 2019. All Rights Reserved. </p>
+                    </div>
+                </div>
+                <!-- // End Client Logos -->
+
+            </div>
+            <!-- // Container Ends -->
+
+        </div>
+    </section>
+
+    <!--========== Javascript Files ==========-->
+
+    <!-- jQuery Latest -->
+    <script src="../js/lib/jquery-2.2.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/lib/bootstrap.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d248d5c22d70e36c2a4e201/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!--ClickMeter.com code for conversion: success -->
+    <script type='text/javascript'>
+        var ClickMeter_conversion_id = 'DB2202E1796F481E851AE06B3C871823';
+        var ClickMeter_conversion_value = '0.00';
+        var ClickMeter_conversion_commission = '0.00';
+        var ClickMeter_conversion_commission_percentage = '0.00';
+        var ClickMeter_conversion_parameter = 'empty';
+    </script>
+    <script type='text/javascript' id='cmconvscript'
+        src='//s3.amazonaws.com/scripts-clickmeter-com/js/conversion.js'></script>
+    <noscript>
+        <img height='0' width='0' alt=''
+            src='//www.clickmeter.com/conversion.aspx?id=DB2202E1796F481E851AE06B3C871823&val=0.00&param=empty&com=0.00&comperc=0.00&pixel=true' />
+    </noscript>
+</body>
+
+</html>

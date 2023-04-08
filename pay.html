@@ -1,0 +1,51 @@
+<div id="paynow" class="contact_form_invoice_payment">
+
+    <div class="invoice_payment_title">Pay your invoice here</div>
+
+    <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
+
+        <input value="_xclick" name="cmd" type="hidden">
+        <input value="nessa@stressless.ie" name="business" type="hidden">
+        <input value="http://www.matrix-test.com/stressless/" name="return" type="hidden">
+        <input value="0" name="no_shipping" type="hidden">
+        <input value="1" name="no_note" type="hidden">
+        <input value="EUR" name="currency_code" type="hidden">
+        <input value="IE" name="lc" type="hidden">
+        <input value="PP-BuyNowBF" name="bn" type="hidden">
+        <input value="0" name="tax" type="hidden">
+        <input value="Online Payment" name="item_name" type="hidden">
+        <input value="OP" name="item_number" type="hidden">
+
+        <div class="first_name_invoice_payment">
+            First name (requiered) <br />
+            <input value="" name="first_name"> 
+        </div>
+
+        <div class="last_name_invoice_payment">     
+            Last name (requiered)<br />
+            <input value="" name="last_name"> 
+        </div>
+
+        <div class="email_invoice_payment">     
+            Email (requiered)<br />
+            <input value="" name="email"> 
+        </div>
+
+        <div class="first_name_invoice_payment">
+            Invoice Number (requiered)<br />
+            <input id="inv" value="" name="item_number">
+        </div>
+
+        <div class="last_name_invoice_payment">     
+            Amount - Euro Only (requiered)<br />
+            <input id="amt" value="" name="amount">
+        </div>
+
+        <div class="job_title_invoice_payment"> 
+            <input alt="PayPal - The safer, easier way to pay online!" name="submit" border="0" src="https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" type="image" class="no-width image" style="width:auto !important; border:none; margin-top:20px;"> 
+            <img height="1" width="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" border="0" alt="">
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/* ------------------------------------------------
+
+Page	: Proland CSS
+Version : 1.0
+Author  : Surjith S M
+URI     : http://themeforest.net/user/surjithctly
+
+Copyright © All rights Reserved
+Surjith S M / @surjithctly
+
+-------------------------------------------------- */
+/*=====================================================================
+
+
+@Default Styles
+
+Table of Content:
+01/ Prefix
+02/ Header
+03/ The Product
+04/ How it Works
+05/ The Benefits
+06/ Left Right Content
+07/ Our Collection
+08/ The Watch
+09/ Splt Columns
+10/ Reviews
+11/ FAQs
+12/ Tech Specs
+13/ Our Team
+14/ Timeline
+15/ Mobile App
+16/ Newsletter
+17/ Contact
+18/ Footer
+19/ Page Header
+20/ Blog
+21/ Sidebar
+22/ Comments
+23/ Products
+24/ Exit Popup
+
+=====================================================================*/
+/*========= @import Global & Variables ==========*/
+/*Color Variables*/
+/*============= Global =============*/
+body {
+  position: relative;
+}
+
+header.row,
+footer.row {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+.btn,
+button {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms linear 0s;
+}
+
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font: 300 14px/26px "Poppins", sans-serif;
+  color: #82898f;
+}
+
+li {
+  font: 300 14px/26px "Poppins", sans-serif;
+  color: #82898f;
+}
+
+/*============= BOXED Patterns =============*/
+
+/*============= Buttons =============*/
+.btn {
+  border-radius: 30px;
+  font: 300 12px/26px "Poppins", sans-serif;
+  padding: 2px 33px 0;
+  color: #b4bcc3;
+  border-color: #e1e4e7;
+}
+
+.btn:hover, .btn:focus {
+  background: #374048;
+  border-color: #374048;
+  color: #fff;
+}
+
+.btn-warning {
+  text-transform: uppercase;
+  font: 500 16px/40px "Poppins", sans-serif;
+  padding: 0 35px;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background: #374048;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .btn-warning {
+    margin-bottom: 35px;
+  }
+}
+
+/*============= Form Control - Form input Styles =============*/
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  font: 300 17px/24px "Poppins", sans-serif;
+  padding: 12px 18px;
+  height: 50px;
+  border-color: #e0e8ee;
+  background: #f8fbfd;
+}
+
+.form-control::-moz-placeholder {
+  opacity: 1;
+  font: 300 17px/24px "Poppins", sans-serif;
+  color: #c0cad0;
+}
+
+.form-control:-ms-input-placeholder {
+  font: 300 17px/24px "Poppins", sans-serif;
+  color: #c0cad0;
+}
+
+.form-control::-webkit-input-placeholder {
+  font: 300 17px/24px "Poppins", sans-serif;
+  color: #c0cad0;
+}
+
+.form-control:focus {
+  background: transparent;
+  box-shadow: none;
+}
+
+/*============= Utilities =============*/
+
+/*=============Custom Animation=============*/
+
+/*============= Magnific Popup =============*/
+
+/*===============================================
+  NAV TABS
+  ===============================================*/
+
+/*
+   Back to Top
+   ----------- */
+
+/*
+   Gallery
+   ----------- */
+
+/*========= @import Components ==========*/
+/*=========Prefix==========*/
+.m0 {
+  margin: 0;
+}
+
+/*-----------------------*/
+
+/*=========Header==========*/
+.navbar {
+  min-height: 55px;
+  background: none;
+  padding: 20px 0 24px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  transition: all 300ms linear 0s;
+}
+
+.navbar .navbar-header {
+  margin: 0;
+  transition: all 300ms linear 0s;
+}
+
+.navbar .navbar-header .navbar-toggle {
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.navbar .navbar-header .navbar-toggle span {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .navbar-header .navbar-brand {
+  margin-left: 0;
+  padding: 0;
+  height: 55px;
+  width: 203px;
+  transition: all 300ms linear 0s;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-header .navbar-brand {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.navbar .navbar-header .navbar-brand img {
+  max-width: 100%;
+  transition: all 300ms linear 0s;
+}
+
+#main-navbar {
+  padding-top: 8px;
+  transition: all 300ms linear 0s;
+}
+
+#main-navbar .nav {
+  padding-right: 8px;
+  margin-right: 0;
+}
+
+#main-navbar .nav li a {
+  padding: 0 17px;
+  text-transform: uppercase;
+  font: 500 16px/40px "Poppins", sans-serif;
+}
+
+.navbar-default .navbar-collapse {
+  border-top: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-default .navbar-collapse {
+    background: #FFF;
+    margin: 20px 0px;
+    border-radius: 5px;
+  }
+}
+
+header.row {
+  background: url(../images/header-background.jpg) no-repeat scroll center bottom;
+  background-size: cover;
+}
+
+/* ------- Play Video ------- */
+
+/* Magnific Popup */
+
+/************************
+ * Nav Menu on Hover
+ ***********************/
+/*only for screens greater than 992px  */
+
+/* end nav on hover  */
+/************************
+ * Youtube Video Player
+ ***********************/
+
+/* Chrome, Safari, Opera */
+
+/* Standard syntax */
+
+/*RASTER OVERLAY*/
+
+/*VOLUME SLIDER*/
+
+/*=========The Product==========*/
+
+/*=========How it Works==========*/
+
+/*=========How it Works==========*/
+
+/*=========Left Right Content==========*/
+
+/*=========Our Collection==========*/
+
+/*=========The Watch==========*/
+
+/*=========Split Columns==========*/
+
+/*=========Reviews==========*/
+
+/*=========FAQ==========*/
+
+/*=========Tech Specs==========*/
+
+/*=========Team==========*/
+
+/*=========Timeline==========*/
+
+/*=========Mobile App==========*/
+
+/*=========Newsletter==========*/
+
+/*=========Contact==========*/
+
+.contact-box h2 {
+  margin: 0;
+  font: 600 27px/1 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact-box ul {
+  margin: 25px 0 30px;
+}
+
+.contact-box ul li {
+  padding-left: 30px;
+  font: 300 16px/2 "Poppins", sans-serif;
+}
+
+.contact-box ul li + li {
+  margin-top: 10px;
+}
+
+.contact-box ul li i {
+  width: 30px;
+  float: left;
+  margin-left: -30px;
+  line-height: 32px;
+}
+
+/*=========Footer==========*/
+footer.row {
+  text-align: center;
+}
+
+.menu-rights {
+  padding: 35px 0;
+}
+
+.menu-rights p {
+  font: 300 15px/1 "Poppins", sans-serif;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .small-divide {
+    display: none;
+  }
+}
+
+/*=========Page Header==========*/
+
+/*=========Blog Section==========*/
+
+/*========= Sidebar ==========*/
+
+/*========= Comments ==========*/
+
+/*========= Product POPUP ==========*/
+
+/* .product-box .personal-info {
+    display: none;
+}
+ */
+
+/*
+   Transition
+   ------------ */
+
+/*  Button */
+
+/*========= Exit Popup ==========*/
+/* ================= Exit Intent Modal =================== */
+
+/*========= Pricing ==========*/
+
+/*# sourceMappingURL=style.css.map */
